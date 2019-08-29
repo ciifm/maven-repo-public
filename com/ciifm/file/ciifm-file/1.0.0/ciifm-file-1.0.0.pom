@@ -34,7 +34,7 @@
 
     <distributionManagement>
         <repository>
-            <id>ciifm-file-mvn-repo</id>
+            <id>ciifm-fil</id>
             <url>file:/code/github/deploy/repository/public</url>
         </repository>
     </distributionManagement>
@@ -44,7 +44,20 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>-->
         </plugins>
     </build>
 
