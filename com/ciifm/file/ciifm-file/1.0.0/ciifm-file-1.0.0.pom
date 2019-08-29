@@ -11,6 +11,7 @@
     <groupId>com.ciifm.file</groupId>
     <artifactId>ciifm-file</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
     <name>ciifm-file</name>
 
     <properties>
